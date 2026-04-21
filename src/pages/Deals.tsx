@@ -177,9 +177,9 @@ export default function Deals() {
   return (
     <main className="min-h-screen bg-surface pb-24">
       {/* Header & Search Section */}
-      <section className="bg-surface-container-low pt-8 pb-12 px-6 shadow-sm">
+      <section className="bg-surface-container-low pt-6 md:pt-8 pb-8 md:pb-12 px-4 md:px-6 shadow-sm">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-primary headline mb-6">
+          <h1 className="text-2xl md:text-4xl font-extrabold text-primary headline mb-4 md:mb-6">
             Jelajahi Mitra DigiDO
           </h1>
           <div className="flex flex-col md:flex-row gap-4">
@@ -198,7 +198,7 @@ export default function Deals() {
             <div className="relative shrink-0" ref={filterRef}>
               <button 
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
-                className="w-full md:w-auto flex items-center justify-center gap-2 bg-primary text-white px-6 py-4 rounded-xl font-bold hover:bg-primary-container hover:text-on-primary-container transition-colors"
+                className="w-full md:w-auto flex items-center justify-center gap-2 bg-primary text-white px-4 py-3 md:px-6 md:py-4 rounded-xl text-sm md:text-base font-bold hover:bg-primary-container hover:text-on-primary-container transition-colors"
               >
                 <SlidersHorizontal className="w-5 h-5" />
                 Filter
@@ -226,7 +226,7 @@ export default function Deals() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-6 mt-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 mt-6 md:mt-8">
         
         {/* Menu Promo Section */}
         <div className="mb-12">
@@ -234,12 +234,12 @@ export default function Deals() {
             <div className="bg-secondary-container p-2 rounded-lg">
               <Percent className="w-5 h-5 text-on-secondary-container" />
             </div>
-            <h2 className="text-2xl font-extrabold text-primary headline">Promo Menu Hari Ini</h2>
+            <h2 className="text-xl md:text-2xl font-extrabold text-primary headline">Promo Menu Hari Ini</h2>
           </div>
-          <div className="flex gap-6 overflow-x-auto no-scrollbar pb-4">
+          <div className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar pb-4 -mx-4 px-4 md:mx-0 md:px-0">
             {MOCK_PROMOS.map((promo) => (
-              <Link to="/merchant" key={promo.id} className="min-w-[280px] bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
-                <div className="h-40 relative overflow-hidden shrink-0">
+              <Link to="/merchant" key={promo.id} className="min-w-[240px] md:min-w-[280px] bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
+                <div className="h-32 md:h-40 relative overflow-hidden shrink-0">
                   <img src={promo.image} alt={promo.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute top-3 right-3 bg-secondary text-white px-2.5 py-1 rounded-lg text-xs font-bold shadow-sm">
                     Hemat {promo.discount}
@@ -259,13 +259,13 @@ export default function Deals() {
         </div>
 
         {/* Categories / Tabs */}
-        <h2 className="text-2xl font-extrabold text-primary headline mb-4">Jelajahi Mitra</h2>
-        <div className="flex gap-3 overflow-x-auto no-scrollbar mb-8 pb-2">
+        <h2 className="text-xl md:text-2xl font-extrabold text-primary headline mb-3 md:mb-4">Jelajahi Mitra</h2>
+        <div className="flex gap-2 md:gap-3 overflow-x-auto no-scrollbar mb-6 md:mb-8 pb-2 -mx-4 px-4 md:mx-0 md:px-0">
           {CATEGORIES.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2.5 rounded-full text-sm font-bold whitespace-nowrap transition-all shadow-sm ${
+              className={`px-4 py-2 md:px-6 md:py-2.5 rounded-full text-xs md:text-sm font-bold whitespace-nowrap transition-all shadow-sm ${
                 activeCategory === category
                   ? "bg-primary text-white shadow-primary/30"
                   : "bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high"
@@ -277,32 +277,32 @@ export default function Deals() {
         </div>
 
         {/* Merchants Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6">
           {sortedAndFilteredMerchants.length > 0 ? (
             sortedAndFilteredMerchants.map((merchant) => (
               <Link to="/merchant" key={merchant.id} className="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-outline-variant/10 flex flex-col">
-                <div className="relative h-48 overflow-hidden shrink-0">
+                <div className="relative h-32 md:h-48 overflow-hidden shrink-0">
                   <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={merchant.name} src={merchant.image} />
-                  <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+                  <div className="absolute top-2 left-2 md:top-3 md:left-3 flex flex-col gap-1.5">
                     {merchant.tags.map(tag => (
-                      <span key={tag} className="bg-secondary-container/90 backdrop-blur-sm text-on-secondary-container px-3 py-1 rounded-lg text-[10px] font-black tracking-wider uppercase shadow-sm w-max">
+                      <span key={tag} className="bg-secondary-container/90 backdrop-blur-sm text-on-secondary-container px-2 py-0.5 md:px-3 md:py-1 rounded-lg text-[8px] md:text-[10px] font-black tracking-wider uppercase shadow-sm w-max hidden sm:block">
                         {tag}
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="p-5 flex flex-col flex-grow justify-between">
+                <div className="p-3 md:p-5 flex flex-col flex-grow justify-between">
                   <div>
                     <div className="flex justify-between items-start mb-1">
                       <span className="text-[10px] uppercase font-bold tracking-widest text-outline">{merchant.category}</span>
                     </div>
-                    <h3 className="font-bold text-xl text-primary mb-3 headline line-clamp-1 group-hover:text-secondary transition-colors">{merchant.name}</h3>
+                    <h3 className="font-bold text-base md:text-xl text-primary mb-2 md:mb-3 headline line-clamp-2 md:line-clamp-1 group-hover:text-secondary transition-colors">{merchant.name}</h3>
                   </div>
-                  <div className="flex items-center justify-between pt-4 border-t border-surface-container">
-                    <div className="flex items-center gap-1.5 text-secondary">
-                      <Star className="w-4 h-4 fill-secondary" />
-                      <span className="font-bold text-sm text-on-surface">{merchant.rating}</span>
-                      <span className="text-xs text-outline font-medium">({merchant.reviews})</span>
+                  <div className="flex items-center justify-between pt-2 md:pt-4 border-t border-surface-container flex-wrap gap-1">
+                    <div className="flex items-center gap-1 md:gap-1.5 text-secondary">
+                      <Star className="w-3 h-3 md:w-4 md:h-4 fill-secondary" />
+                      <span className="font-bold text-xs md:text-sm text-on-surface">{merchant.rating}</span>
+                      <span className="text-[10px] md:text-xs text-outline font-medium hidden sm:inline-block">({merchant.reviews})</span>
                     </div>
                     <div className="flex items-center gap-1 text-on-surface-variant">
                       <MapPin className="w-3 h-3" />

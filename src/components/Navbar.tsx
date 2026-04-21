@@ -44,9 +44,9 @@ export default function Navbar() {
   if (isMerchant) return null;
 
   return (
-    <nav className="flex justify-between items-center w-full px-8 py-4 sticky top-0 z-50 bg-white dark:bg-gray-900 bg-surface-container-low bg-surface">
-      <div className="flex items-center gap-8">
-        <Link to="/" className="text-2xl font-black tracking-tighter text-primary dark:text-white headline">
+    <nav className="flex justify-between items-center w-full px-4 md:px-8 py-3 md:py-4 sticky top-0 z-50 bg-white dark:bg-gray-900 bg-surface-container-low bg-surface">
+      <div className="flex items-center gap-4 md:gap-8">
+        <Link to="/" className="text-xl md:text-2xl font-black tracking-tighter text-primary dark:text-white headline">
           DigiDO
         </Link>
         <div className="hidden md:flex gap-6 items-center">
