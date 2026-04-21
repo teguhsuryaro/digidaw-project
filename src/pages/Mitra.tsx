@@ -1,6 +1,21 @@
 import { Percent, Users, Nfc, Rocket, Quote } from "lucide-react";
+import { useState } from "react";
 
 export default function Mitra() {
+  const [formData, setFormData] = useState({
+    businessName: '',
+    category: 'Kuliner',
+    address: '',
+    whatsapp: '',
+    productLink: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    alert(`Pendaftaran untuk "${formData.businessName}" sedang diproses! (Ini hanya simulasi)`);
+    console.log(formData);
+  };
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -28,41 +43,43 @@ export default function Mitra() {
               <h2 className="text-3xl font-extrabold text-primary mb-2 headline">Formulir Pendaftaran</h2>
               <p className="text-on-surface-variant font-body">Lengkapi data di bawah untuk mulai berjualan hari ini.</p>
             </div>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Nama Usaha</label>
-                  <input className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="Contoh: Kedai Kopi Berkah" type="text" />
+                  <label htmlFor="businessName" className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Nama Usaha</label>
+                  <input id="businessName" name="businessName" value={formData.businessName} onChange={(e) => setFormData({...formData, businessName: e.target.value})} className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="Contoh: Kedai Kopi Berkah" type="text" required />
                 </div>
                 <div className="space-y-2">
-                  <label className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Kategori</label>
-                  <select className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary appearance-none outline-none text-on-surface">
+                  <label htmlFor="category" className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Kategori</label>
+                  <select id="category" name="category" value={formData.category} onChange={(e) => setFormData({...formData, category: e.target.value})} className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary appearance-none outline-none text-on-surface">
                     <option>Kuliner</option>
-                    <option>Fashion</option>
+                    <option>Jajanan</option>
+                    <option>Kopi & Minuman</option>
+                    <option>Fashion Lokal</option>
+                    <option>Kerajinan</option>
                     <option>Jasa</option>
-                    <option>Elektronik</option>
                   </select>
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Alamat Lapak/Rumah</label>
-                <textarea className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="Alamat lengkap lokasi usaha Anda" rows={3}></textarea>
+                <label htmlFor="address" className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Alamat Lapak/Rumah</label>
+                <textarea id="address" name="address" value={formData.address} onChange={(e) => setFormData({...formData, address: e.target.value})} className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="Alamat lengkap lokasi usaha Anda" rows={3} required></textarea>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">No. WhatsApp</label>
+                  <label htmlFor="whatsapp" className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">No. WhatsApp</label>
                   <div className="relative">
                     <span className="absolute left-6 top-1/2 -translate-y-1/2 text-on-surface-variant font-medium">+62</span>
-                    <input className="w-full bg-surface-container-low border-none rounded-xl py-4 pl-16 pr-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="812345678" type="tel" />
+                    <input id="whatsapp" name="whatsapp" value={formData.whatsapp} onChange={(e) => setFormData({...formData, whatsapp: e.target.value})} className="w-full bg-surface-container-low border-none rounded-xl py-4 pl-16 pr-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="812345678" type="tel" required />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Link Menu/Foto Produk</label>
-                  <input className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="https://instagram.com/usaha-anda" type="url" />
+                  <label htmlFor="productLink" className="block text-[11px] font-bold tracking-wider uppercase text-outline font-label">Link Menu/Foto Produk</label>
+                  <input id="productLink" name="productLink" value={formData.productLink} onChange={(e) => setFormData({...formData, productLink: e.target.value})} className="w-full bg-surface-container-low border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant outline-none" placeholder="https://instagram.com/usaha-anda" type="url" />
                 </div>
               </div>
               <div className="pt-6">
-                <button type="button" className="w-full py-5 bg-gradient-to-r from-secondary to-secondary-container text-on-secondary-container font-black text-lg rounded-xl shadow-lg hover:shadow-xl transform active:scale-95 duration-150 ease-in-out cursor-pointer">
+                <button type="submit" className="w-full py-5 bg-gradient-to-r from-secondary to-secondary-container text-on-secondary-container font-black text-lg rounded-xl shadow-lg hover:shadow-xl transform active:scale-95 duration-150 ease-in-out cursor-pointer">
                   Daftar Sekarang
                 </button>
               </div>

@@ -12,26 +12,22 @@ export default function AIChat() {
   const [input, setInput] = useState("");
 
   const handleSend = () => {
-    if (!input.trim()) return;
-    
-    // Add user message
-    const newMessages = [
-      ...messages,
-      { id: Date.now(), type: "user", text: input }
-    ];
-    setMessages(newMessages);
+    const trimmedInput = input.trim();
+    if (!trimmedInput) return;
+
+    const userMessage = { id: Date.now(), type: "user" as const, text: trimmedInput };
+    setMessages(prevMessages => [...prevMessages, userMessage]);
     setInput("");
 
     // Simulate AI response
     setTimeout(() => {
-      setMessages([
-        ...newMessages,
-        {
-          id: Date.now(),
-          type: "ai",
-          text: "Terima kasih atas pesan Anda! Saat ini saya masih dalam tahap pengembangan. Namun, saya akan segera bisa membantu Anda menemukan kuliner terbaik dan menjawab semua pertanyaan Anda seputar DigiDO."
-        }
-      ]);
+      const aiResponse = {
+        id: Date.now() + 1, // Ensure unique ID
+        type: "ai" as const,
+        text: "Terima kasih atas pesan Anda! Saat ini saya masih dalam tahap pengembangan. Namun, saya akan segera bisa membantu Anda menemukan kuliner terbaik dan menjawab semua pertanyaan Anda seputar DigiDO."
+      };
+      // Use functional update to avoid race conditions
+      setMessages(prevMessages => [...prevMessages, aiResponse]);
     }, 1000);
   };
 

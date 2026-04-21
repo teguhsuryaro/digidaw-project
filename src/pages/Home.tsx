@@ -16,10 +16,10 @@ export default function Home() {
               Zero Cost Delivery & <span className="text-secondary-fixed">100% Cashless</span>
             </h1>
             <p className="text-on-primary-container text-lg max-w-md font-body">
-              Mendukung pertumbuhan ekonomi lokal dengan kurasi layanan merchant terbaik tanpa biaya tambahan.
+              Mendukung pertumbuhan ekonomi lokal dan memberdayakan UMKM, terkhusus di Purbalingga, melalui kurasi layanan merchant terbaik tanpa biaya tambahan.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link to="/merchant" className="bg-surface-container-lowest text-primary px-8 py-4 rounded-lg font-bold hover:scale-95 duration-150 transition-all flex items-center gap-2">
+              <Link to="/deals" className="bg-surface-container-lowest text-primary px-8 py-4 rounded-lg font-bold hover:scale-95 duration-150 transition-all flex items-center gap-2">
                 Mulai Belanja
                 <ArrowRight className="w-5 h-5" />
               </Link>
@@ -31,8 +31,8 @@ export default function Home() {
           <div className="absolute right-0 top-0 h-full w-1/2 hidden md:block opacity-40">
             <img 
               className="object-cover w-full h-full mix-blend-overlay" 
-              alt="Marketplace concept" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNafHMLSHIJeyQYneZ8EnHElhqouNDa8Z9sGwe03vwbOV90m76Dtc9JBOuiu1Hm6RtrY-VV0oiStceWsBnFe5XtH4dOAweU8YqUAocK2nvi7q_P-5H0P1GKOcC5bvbG5bXYzZlH_xNhN2AuCQHLudvbg_R82u9RvINUPP5gfmiBsDkmQOWVr6f5IFeOP86NxamOOGdeWOVV6hiQ_WAM7dVGg7dgEq2r_COa-hdaEOXQRN0Z5L1XrLwhskXfL88xn0_6bG9tB9neq8I" 
+              alt="Cashless payment concept" 
+              src="/images/background.webp" 
             />
           </div>
         </div>
@@ -54,12 +54,12 @@ export default function Home() {
           {/* Card 1 */}
           <div className="min-w-[320px] bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10">
             <div className="h-48 w-full rounded-lg overflow-hidden mb-4">
-              <img className="w-full h-full object-cover" alt="Cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf7WiB1hbHNCiKvvhyzc_c0nJo1w6kpXxRL93HsNx5j7CdTEueLwjerzX4JHZ9wgOvnrp4ItXacNKh-06eGUOORui7EZtRX9h7Ck9a3HiQse3mKa1RJvMiZdzgt63DefbmHr1NyDGxNEKbVG192fuYPOXmSuzxClzq7XJxkx6snIGGB43aUTYaIfe_ShIjiElXmhUj6yaksGnvTvhEnb71j-hHl6Cy53PGMJQC4co6fI5FecE50FV9VO7Rw2BCpmjmTzBcJ_MJd1WP" />
+              <img className="w-full h-full object-cover" alt="Kopi" src="/images/kopi-senja.jpg" />
             </div>
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="font-bold text-lg text-primary headline">Coffee Anthology</h3>
-                <p className="text-sm text-outline">Beverages & Cafe</p>
+                <h3 className="font-bold text-lg text-primary headline">Kopi Senja</h3>
+                <p className="text-sm text-outline">Kopi & Minuman</p>
               </div>
               <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Premium</span>
             </div>
@@ -67,12 +67,12 @@ export default function Home() {
           {/* Card 2 */}
           <div className="min-w-[320px] bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10">
             <div className="h-48 w-full rounded-lg overflow-hidden mb-4">
-              <img className="w-full h-full object-cover" alt="Food" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_nCukfEAhi-kcjIeu5BVMENHr1cA1Rxz_rev-c68LBe7fJamuMhLzSB7NaE6C88PJwVQlwvvBg-7LYYMXiXPkXaOUkh-BBAc0SKge2_5-SpJlK2eEdhdPq6uc7IStx1pSGgS81UksZ-7NICgNJrmC3FaS9x3352VyIFpctru5ZA2L_cXypxeaK1B8knAE3a8M8JelRCBxsiWHuavUEeQ5Z0_akMKq2hd5rpzIZR4zE-QG1CQe7ivZgZv__JyVl615lL953xXZ7PmZ" />
+              <img className="w-full h-full object-cover" alt="Warung Nasi" src="/images/warung-nasi-ibu-susi.jpg" />
             </div>
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="font-bold text-lg text-primary headline">Warung Nusantara</h3>
-                <p className="text-sm text-outline">Indonesian Food</p>
+                <h3 className="font-bold text-lg text-primary headline">Warung Nasi Ibu Susi</h3>
+                <p className="text-sm text-outline">Kuliner Indonesia</p>
               </div>
               <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Verified</span>
             </div>
@@ -80,12 +80,12 @@ export default function Home() {
           {/* Card 3 */}
           <div className="min-w-[320px] bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10">
             <div className="h-48 w-full rounded-lg overflow-hidden mb-4">
-              <img className="w-full h-full object-cover" alt="Grocery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ11rhR3F7EHAoUgOTrcUeMU1sfc--Hm6Wgq0RpT22equPXmbRTASV0xVx8IdaJ9IPO8ag9xjTu0ed57kQ1iSGOYYRGPadecl56V3bfmNy2AZAXkLnDicfkZPz_sw93vbOa3n3bhlQaFwCwN5JkqzhWzV4TlTZluUEZ3NLt2zrEkrJv9E4sTSbJlIcTLZmhKuMKCL3mttW9vQ0ccPsZDnwd-hb8sWuang9ADT5sSdjyGEiW4UigSMlcd0be2CAsEzPL4hnD-4rYPSj" />
+              <img className="w-full h-full object-cover" alt="Batik" src="/images/batik-lestari.jpg" />
             </div>
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="font-bold text-lg text-primary headline">Fresh Harvest Market</h3>
-                <p className="text-sm text-outline">Grocery & Fresh Goods</p>
+                <h3 className="font-bold text-lg text-primary headline">Batik Lestari</h3>
+                <p className="text-sm text-outline">Fashion Lokal</p>
               </div>
               <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Premium</span>
             </div>
@@ -93,14 +93,14 @@ export default function Home() {
           {/* Card 4 */}
           <div className="min-w-[320px] bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10">
             <div className="h-48 w-full rounded-lg overflow-hidden mb-4">
-              <img className="w-full h-full object-cover" alt="Fashion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuFT3-0sUVRVdIgka05ZmJ12i1ziNog8iGt8dmRTtHAeRBrqtEnfW-wQ9Isn8hflefWDR4oZBy7xJbHuHDDyRFTNCAT0ZHqPwpzC142d0ZCyBiV-yC92HelH_lV6e15qJ1bWgLgEHVgGwLXXhP57Vt-K2CLl1Xl-gqNbrGmDyPNYhePepZfaKeNUvJy9_Xcf_WDGV_H6AG5HVaBRfKAHgNlB5tBsNS4PQCjjsrh70hVZ5INZ53TBx5xikAe4SB2EwR_4pEdPFlYCbR" />
+              <img className="w-full h-full object-cover" alt="Gorengan" src="/images/gorengan-bang-jago.jpg" />
             </div>
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="font-bold text-lg text-primary headline">Urban Modiste</h3>
-                <p className="text-sm text-outline">Fashion & Lifestyle</p>
+                <h3 className="font-bold text-lg text-primary headline">Gorengan Bang Jago</h3>
+                <p className="text-sm text-outline">Jajanan Kaki Lima</p>
               </div>
-              <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Premium</span>
+              <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Terlaris</span>
             </div>
           </div>
         </div>
@@ -109,20 +109,27 @@ export default function Home() {
       {/* UMKM Grid Section */}
       <section className="py-16 px-8 bg-surface-container-low">
         <div className="mb-12 max-w-7xl mx-auto">
-          <h2 className="text-4xl font-black text-primary tracking-tight mb-4 headline">Temukan UMKM Terdekat</h2>
+          <div className="flex justify-between items-end mb-4 gap-4">
+            <h2 className="text-4xl font-black text-primary tracking-tight headline">Temukan UMKM Terdekat</h2>
+            <Link to="/deals" state={{ sortBy: 'distance' }} className="flex items-center gap-1 text-primary font-bold text-sm hover:underline mb-1 shrink-0">
+              Lihat Semua
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </div>
           <div className="flex gap-2 overflow-x-auto no-scrollbar">
             <button className="bg-primary text-white px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Semua</button>
-            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Makanan</button>
-            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Jasa</button>
-            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Pakaian</button>
-            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Kesehatan</button>
+            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Kuliner</button>
+            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Jajanan</button>
+            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Kopi & Minuman</button>
+            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Fashion</button>
+            <button className="bg-surface-container-highest text-on-surface-variant px-6 py-2 rounded-full font-bold text-sm whitespace-nowrap">Kerajinan</button>
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {/* Grid Card 1 */}
-          <div className="group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+          <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
             <div className="relative h-56 overflow-hidden">
-              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiY5JPAQdkHx8cjy_o0R9BAou7GMZylWPaYAxTE3X9IjNUYcUrG5DVghUw6L11yMFNtiDadEy85CxRpgcfnLmcl7WDQFAaFz-vxQPUUP00B6ONWju4WygCngGxDFaKvxUn_m_kc_gNvzYukrGUfZe_6IxszbWB2WqhiclMIeS7_QVK0nY7DCHprDkM8Qk7ZZbp01hWhieP1xb4fX1cpKRcr--TdSfUwn5c9GSLQenSEIDeu8IOvavrGROB_df5vinA6gPUb3bSrsQv" />
+              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Soto Ayam" src="/images/soto-ayam-pak-min.jpg" />
               <div className="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-lg text-xs font-bold font-label">
                 Gratis Ongkir
               </div>
@@ -132,7 +139,7 @@ export default function Home() {
                 <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Kuliner</span>
                 <QrCode className="text-primary w-5 h-5" />
               </div>
-              <h3 className="font-bold text-xl text-primary mb-4 headline">Bakery Delights</h3>
+              <h3 className="font-bold text-xl text-primary mb-4 headline">Soto Ayam Pak Min</h3>
               <div className="flex items-center justify-between pt-4 border-t border-surface-container">
                 <div className="flex items-center gap-1 text-secondary">
                   <Star className="w-4 h-4 fill-secondary" />
@@ -141,11 +148,11 @@ export default function Home() {
                 <span className="text-xs text-outline font-medium">1.2km away</span>
               </div>
             </div>
-          </div>
+          </Link>
           {/* Grid Card 2 */}
-          <div className="group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+          <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
             <div className="relative h-56 overflow-hidden">
-              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Barbershop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdp5bFTQHnJvew4B0M34aCnQfijLYrMNmZ8BeJXZLQ5s3NQeSg0H01ZqaM098yfABMRMRnJX144d_3mIK0GpXaUUPNxbPMJbt4Vv5IXaWkdhMIN7d49np7BH32u9_SDse7Dr_wcZIm9YzGDQ6PfzHjhX1VrAO-xTouuuQFnE_iOeEhKaDR0VjZ5brl7TuTNgyghxTjdvw3R0VHBlReAjpguugnY3z0IMkZr-mRH8HimuwMfXtPRfuR83ihKo0MHgHhzaZS0u3Km51f" />
+              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Barbershop" src="/images/cukur-rambut-rapi.jpg" />
               <div className="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-lg text-xs font-bold font-label">
                 Gratis Ongkir
               </div>
@@ -155,7 +162,7 @@ export default function Home() {
                 <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Jasa</span>
                 <QrCode className="text-primary w-5 h-5" />
               </div>
-              <h3 className="font-bold text-xl text-primary mb-4 headline">The Clean Cut</h3>
+              <h3 className="font-bold text-xl text-primary mb-4 headline">Cukur Rambut 'Rapi'</h3>
               <div className="flex items-center justify-between pt-4 border-t border-surface-container">
                 <div className="flex items-center gap-1 text-secondary">
                   <Star className="w-4 h-4 fill-secondary" />
@@ -164,21 +171,21 @@ export default function Home() {
                 <span className="text-xs text-outline font-medium">0.8km away</span>
               </div>
             </div>
-          </div>
+          </Link>
           {/* Grid Card 3 */}
-          <div className="group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+          <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
             <div className="relative h-56 overflow-hidden">
-              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Yoga" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHMI6QfNETsn9Xh-pv4lCNKnsJ_g2sGaL_iQLo2BpntJU2o4L42_DS5HqqV6g_VZgZ7AqsIhGShU20QdMb9S4rYvzT6H-DPE00bAW4NPhWy2iAlTShUM1ompOkAlVYjgvM4qBInzBnH1DzwO3IFy5KfDtPNwo2endFYyoe-uol4Ui0gdRRDHhGNsRilxFBQneMo1HStS7-3JgZFp58455ud3lSY-GV1Nk0ES41eVdt5M4zvNaCVX5yQ1VetqotuF-7viTjMjryRg-S" />
+              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Seblak" src="/images/seblak-jeletot-teh-euis.jpg" />
               <div className="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-lg text-xs font-bold font-label">
                 Gratis Ongkir
               </div>
             </div>
             <div className="p-6">
               <div className="flex justify-between items-start mb-2">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Kesehatan</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Jajanan</span>
                 <QrCode className="text-primary w-5 h-5" />
               </div>
-              <h3 className="font-bold text-xl text-primary mb-4 headline">Zen Yoga Space</h3>
+              <h3 className="font-bold text-xl text-primary mb-4 headline">Seblak Jeletot Teh Euis</h3>
               <div className="flex items-center justify-between pt-4 border-t border-surface-container">
                 <div className="flex items-center gap-1 text-secondary">
                   <Star className="w-4 h-4 fill-secondary" />
@@ -187,21 +194,21 @@ export default function Home() {
                 <span className="text-xs text-outline font-medium">2.4km away</span>
               </div>
             </div>
-          </div>
+          </Link>
           {/* Grid Card 4 */}
-          <div className="group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+          <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
             <div className="relative h-56 overflow-hidden">
-              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Retail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_720SgnTEomqgjN0pS6aYLWoHIdEiuxNTkmarXN5R7Fruq89i9kxFOHhOdW4vGeWL9Mph7UP81jBzr4ySfIxpmF5QwP4Kz62RhgEioPrQSDkI0N86JqoJPmCxUHw8EhANdW44xq4PSDz2R-oFFy7taDlFZKlRdnDEgbF5YVk5kg2clLJ4dyekZ_qy-JGjgyzxRNA0PYLSs8JR7MbJl3Y5TchyEwlcnqpAIPP02HUkFyXZQ-XrSeSEkQD4K27IbCRHP0zTmLgZNNZT" />
+              <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Kerajinan" src="/images/pottery-cantik.jpg" />
               <div className="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-lg text-xs font-bold font-label">
                 Gratis Ongkir
               </div>
             </div>
             <div className="p-6">
               <div className="flex justify-between items-start mb-2">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Retail</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Kerajinan</span>
                 <QrCode className="text-primary w-5 h-5" />
               </div>
-              <h3 className="font-bold text-xl text-primary mb-4 headline">Minimalist Home</h3>
+              <h3 className="font-bold text-xl text-primary mb-4 headline">Pottery Cantik</h3>
               <div className="flex items-center justify-between pt-4 border-t border-surface-container">
                 <div className="flex items-center gap-1 text-secondary">
                   <Star className="w-4 h-4 fill-secondary" />
@@ -210,7 +217,7 @@ export default function Home() {
                 <span className="text-xs text-outline font-medium">3.1km away</span>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 
