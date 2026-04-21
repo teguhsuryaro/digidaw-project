@@ -50,57 +50,57 @@ export default function Home() {
             <ArrowUpRight className="w-4 h-4" />
           </button>
         </div>
-        <div className="no-scrollbar flex gap-4 md:gap-6 overflow-x-auto px-4 md:px-8 pb-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 px-4 md:px-8 pb-8 max-w-7xl mx-auto">
           {/* Card 1 */}
-          <div className="min-w-[260px] md:min-w-[320px] bg-surface-container-lowest p-4 md:p-6 rounded-xl border border-outline-variant/10">
-            <div className="h-36 md:h-48 w-full rounded-lg overflow-hidden mb-4">
+          <div className="w-full bg-surface-container-lowest p-3 md:p-6 rounded-xl border border-outline-variant/10 flex flex-col h-full">
+            <div className="aspect-square md:aspect-video md:h-48 w-full rounded-lg overflow-hidden mb-3 md:mb-4 shrink-0 bg-surface-container-low">
               <img className="w-full h-full object-cover" alt="Kopi" src="/images/kopi-senja.jpg" />
             </div>
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-2 flex-grow">
               <div>
-                <h3 className="font-bold text-base md:text-lg text-primary headline">Kopi Senja</h3>
-                <p className="text-xs md:text-sm text-outline">Kopi & Minuman</p>
+                <h3 className="font-bold text-sm md:text-lg text-primary headline line-clamp-1">Kopi Senja</h3>
+                <p className="text-[10px] md:text-sm text-outline line-clamp-1">Kopi & Minuman</p>
               </div>
-              <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Premium</span>
+              <span className="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase font-label mt-auto md:mt-0">Premium</span>
             </div>
           </div>
           {/* Card 2 */}
-          <div className="min-w-[260px] md:min-w-[320px] bg-surface-container-lowest p-4 md:p-6 rounded-xl border border-outline-variant/10">
-            <div className="h-36 md:h-48 w-full rounded-lg overflow-hidden mb-4">
+          <div className="w-full bg-surface-container-lowest p-3 md:p-6 rounded-xl border border-outline-variant/10 flex flex-col h-full">
+            <div className="aspect-square md:aspect-video md:h-48 w-full rounded-lg overflow-hidden mb-3 md:mb-4 shrink-0 bg-surface-container-low">
               <img className="w-full h-full object-cover" alt="Warung Nasi" src="/images/warung-nasi-ibu-susi.jpg" />
             </div>
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-2 flex-grow">
               <div>
-                <h3 className="font-bold text-base md:text-lg text-primary headline">Warung Nasi Ibu Susi</h3>
-                <p className="text-xs md:text-sm text-outline">Kuliner Indonesia</p>
+                <h3 className="font-bold text-sm md:text-lg text-primary headline line-clamp-1">Warung Nasi Ibu Susi</h3>
+                <p className="text-[10px] md:text-sm text-outline line-clamp-1">Kuliner Indonesia</p>
               </div>
-              <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Verified</span>
+              <span className="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase font-label mt-auto md:mt-0">Verified</span>
             </div>
           </div>
           {/* Card 3 */}
-          <div className="min-w-[260px] md:min-w-[320px] bg-surface-container-lowest p-4 md:p-6 rounded-xl border border-outline-variant/10">
-            <div className="h-36 md:h-48 w-full rounded-lg overflow-hidden mb-4">
+          <div className="w-full bg-surface-container-lowest p-3 md:p-6 rounded-xl border border-outline-variant/10 flex flex-col h-full">
+            <div className="aspect-square md:aspect-video md:h-48 w-full rounded-lg overflow-hidden mb-3 md:mb-4 shrink-0 bg-surface-container-low">
               <img className="w-full h-full object-cover" alt="Batik" src="/images/batik-lestari.jpg" />
             </div>
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-2 flex-grow">
               <div>
-                <h3 className="font-bold text-base md:text-lg text-primary headline">Batik Lestari</h3>
-                <p className="text-xs md:text-sm text-outline">Fashion Lokal</p>
+                <h3 className="font-bold text-sm md:text-lg text-primary headline line-clamp-1">Batik Lestari</h3>
+                <p className="text-[10px] md:text-sm text-outline line-clamp-1">Fashion Lokal</p>
               </div>
-              <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Premium</span>
+              <span className="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase font-label mt-auto md:mt-0">Premium</span>
             </div>
           </div>
           {/* Card 4 */}
-          <div className="min-w-[260px] md:min-w-[320px] bg-surface-container-lowest p-4 md:p-6 rounded-xl border border-outline-variant/10">
-            <div className="h-36 md:h-48 w-full rounded-lg overflow-hidden mb-4">
+          <div className="w-full bg-surface-container-lowest p-3 md:p-6 rounded-xl border border-outline-variant/10 flex flex-col h-full">
+            <div className="aspect-square md:aspect-video md:h-48 w-full rounded-lg overflow-hidden mb-3 md:mb-4 shrink-0 bg-surface-container-low">
               <img className="w-full h-full object-cover" alt="Gorengan" src="/images/gorengan-bang-jago.jpg" />
             </div>
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-2 flex-grow">
               <div>
-                <h3 className="font-bold text-base md:text-lg text-primary headline">Gorengan Bang Jago</h3>
-                <p className="text-xs md:text-sm text-outline">Jajanan Kaki Lima</p>
+                <h3 className="font-bold text-sm md:text-lg text-primary headline line-clamp-1">Gorengan Bang Jago</h3>
+                <p className="text-[10px] md:text-sm text-outline line-clamp-1">Jajanan Kaki Lima</p>
               </div>
-              <span className="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase font-label">Terlaris</span>
+              <span className="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[8px] md:text-[10px] font-bold tracking-widest uppercase font-label mt-auto md:mt-0">Terlaris</span>
             </div>
           </div>
         </div>
@@ -128,13 +128,13 @@ export default function Home() {
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 max-w-7xl mx-auto">
           {/* Grid Card 1 */}
           <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
-            <div className="relative h-32 md:h-56 overflow-hidden">
+            <div className="relative aspect-square md:aspect-auto md:h-56 overflow-hidden bg-surface-container-low">
               <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Soto Ayam" src="/images/soto-ayam-pak-min.jpg" />
               <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-secondary-container text-on-secondary-container px-2 py-1 md:px-3 rounded-lg text-[10px] md:text-xs font-bold font-label shadow-sm">
                 Gratis Ongkir
               </div>
             </div>
-            <div className="p-4 md:p-6">
+            <div className="p-3 md:p-6 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Kuliner</span>
                 <QrCode className="text-primary w-4 h-4 md:w-5 md:h-5 hidden md:block" />
@@ -151,13 +151,13 @@ export default function Home() {
           </Link>
           {/* Grid Card 2 */}
           <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
-            <div className="relative h-32 md:h-56 overflow-hidden">
+            <div className="relative aspect-square md:aspect-auto md:h-56 overflow-hidden bg-surface-container-low">
               <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Barbershop" src="/images/cukur-rambut-rapi.jpg" />
               <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-secondary-container text-on-secondary-container px-2 py-1 md:px-3 rounded-lg text-[10px] md:text-xs font-bold font-label shadow-sm">
                 Gratis Ongkir
               </div>
             </div>
-            <div className="p-4 md:p-6">
+            <div className="p-3 md:p-6 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Jasa</span>
                 <QrCode className="text-primary w-4 h-4 md:w-5 md:h-5 hidden md:block" />
@@ -174,13 +174,13 @@ export default function Home() {
           </Link>
           {/* Grid Card 3 */}
           <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
-            <div className="relative h-32 md:h-56 overflow-hidden">
+            <div className="relative aspect-square md:aspect-auto md:h-56 overflow-hidden bg-surface-container-low">
               <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Seblak" src="/images/seblak-jeletot-teh-euis.jpg" />
               <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-secondary-container text-on-secondary-container px-2 py-1 md:px-3 rounded-lg text-[10px] md:text-xs font-bold font-label shadow-sm">
                 Gratis Ongkir
               </div>
             </div>
-            <div className="p-4 md:p-6">
+            <div className="p-3 md:p-6 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Jajanan</span>
                 <QrCode className="text-primary w-4 h-4 md:w-5 md:h-5 hidden md:block" />
@@ -197,13 +197,13 @@ export default function Home() {
           </Link>
           {/* Grid Card 4 */}
           <Link to="/merchant" className="block group bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-outline-variant/20">
-            <div className="relative h-32 md:h-56 overflow-hidden">
+            <div className="relative aspect-square md:aspect-auto md:h-56 overflow-hidden bg-surface-container-low">
               <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Kerajinan" src="/images/pottery-cantik.jpg" />
               <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-secondary-container text-on-secondary-container px-2 py-1 md:px-3 rounded-lg text-[10px] md:text-xs font-bold font-label shadow-sm">
                 Gratis Ongkir
               </div>
             </div>
-            <div className="p-4 md:p-6">
+            <div className="p-3 md:p-6 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
                 <span className="text-[10px] uppercase font-bold tracking-widest text-outline font-label">Kerajinan</span>
                 <QrCode className="text-primary w-4 h-4 md:w-5 md:h-5 hidden md:block" />

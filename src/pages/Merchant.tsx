@@ -81,22 +81,22 @@ export default function Merchant() {
         </nav>
 
         {/* Product List */}
-        <section className="px-4 md:px-6 mt-6 md:mt-8 space-y-3 md:space-y-4">
-          <h3 className="text-xl font-bold headline mb-4 text-on-surface px-2">Best Seller</h3>
+        <section className="px-4 md:px-6 mt-6 md:mt-8 grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
+          <h3 className="col-span-full text-lg md:text-xl font-bold headline mt-4 md:mt-6 mb-1 md:mb-4 text-on-surface px-1 md:px-2">Best Seller</h3>
           
           {/* Card 1 */}
-          <div className="bg-surface-container-lowest p-3 md:p-4 rounded-xl flex gap-3 md:gap-4 items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20">
-            <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="bg-surface-container-lowest p-2.5 md:p-4 rounded-xl flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20 h-full">
+            <div className="w-full md:w-24 aspect-square md:aspect-auto md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
               <img alt="Kopi Susu Gula Aren" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/images/kopi-susu-gula-aren.jpg" />
             </div>
-            <div className="flex-grow">
-              <div className="flex justify-between items-start">
-                <h4 className="font-bold text-on-surface text-base md:text-lg leading-tight">Kopi Susu Gula Aren</h4>
-                <span className="text-primary font-black text-base md:text-lg whitespace-nowrap">Rp 22.000</span>
+            <div className="flex-grow flex flex-col w-full h-full">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-0.5 md:gap-4 w-full">
+                <h4 className="font-bold text-on-surface text-sm md:text-lg leading-tight line-clamp-2 md:line-clamp-none">Kopi Susu Gula Aren</h4>
+                <span className="text-primary font-black text-sm md:text-lg whitespace-nowrap">Rp 22.000</span>
               </div>
-              <p className="text-xs md:text-sm text-on-surface-variant mt-1 line-clamp-2">Perpaduan kopi, susu, dan manisnya gula aren yang pas.</p>
-              <div className="mt-3 flex justify-end">
-                <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+              <p className="text-[10px] md:text-sm text-on-surface-variant mt-1 md:mt-1 line-clamp-1 md:line-clamp-2">Perpaduan kopi, susu, dan manisnya gula aren yang pas.</p>
+              <div className="mt-auto pt-2 md:pt-3 flex justify-end w-full">
+                <button className="w-7 h-7 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
                   <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>
@@ -104,18 +104,18 @@ export default function Merchant() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-surface-container-lowest p-3 md:p-4 rounded-xl flex gap-3 md:gap-4 items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20">
-            <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="bg-surface-container-lowest p-2.5 md:p-4 rounded-xl flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20 h-full">
+            <div className="w-full md:w-24 aspect-square md:aspect-auto md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
               <img alt="V60 Japanese Iced" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/images/v60-japanese-iced.jpg" />
             </div>
-            <div className="flex-grow">
-              <div className="flex justify-between items-start">
-                <h4 className="font-bold text-on-surface text-base md:text-lg leading-tight">V60 Japanese Iced</h4>
-                <span className="text-primary font-black text-base md:text-lg whitespace-nowrap">Rp 28.000</span>
+            <div className="flex-grow flex flex-col w-full h-full">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-0.5 md:gap-4 w-full">
+                <h4 className="font-bold text-on-surface text-sm md:text-lg leading-tight line-clamp-2 md:line-clamp-none">V60 Japanese Iced</h4>
+                <span className="text-primary font-black text-sm md:text-lg whitespace-nowrap">Rp 28.000</span>
               </div>
-              <p className="text-xs md:text-sm text-on-surface-variant mt-1 line-clamp-2">Kopi seduh manual dengan metode V60 disajikan dingin ala Jepang.</p>
-              <div className="mt-3 flex justify-end">
-                <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+              <p className="text-[10px] md:text-sm text-on-surface-variant mt-1 md:mt-1 line-clamp-1 md:line-clamp-2">Kopi seduh manual dengan metode V60 disajikan dingin ala Jepang.</p>
+              <div className="mt-auto pt-2 md:pt-3 flex justify-end w-full">
+                <button className="w-7 h-7 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
                   <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>
@@ -123,60 +123,60 @@ export default function Merchant() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-surface-container-lowest p-3 md:p-4 rounded-xl flex gap-3 md:gap-4 items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20">
-            <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="bg-surface-container-lowest p-2.5 md:p-4 rounded-xl flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20 h-full">
+            <div className="w-full md:w-24 aspect-square md:aspect-auto md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
               <img alt="Croissant Coklat" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/images/croissant-coklat.jpg" />
             </div>
-            <div className="flex-grow">
-              <div className="flex justify-between items-start">
-                <h4 className="font-bold text-on-surface text-base md:text-lg leading-tight">Croissant Coklat</h4>
-                <span className="text-primary font-black text-base md:text-lg whitespace-nowrap">Rp 25.000</span>
+            <div className="flex-grow flex flex-col w-full h-full">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-0.5 md:gap-4 w-full">
+                <h4 className="font-bold text-on-surface text-sm md:text-lg leading-tight line-clamp-2 md:line-clamp-none">Croissant Coklat</h4>
+                <span className="text-primary font-black text-sm md:text-lg whitespace-nowrap">Rp 25.000</span>
               </div>
-              <p className="text-xs md:text-sm text-on-surface-variant mt-1 line-clamp-2">Pastry renyah dengan isian coklat premium yang meleleh.</p>
-              <div className="mt-3 flex justify-end">
-                <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+              <p className="text-[10px] md:text-sm text-on-surface-variant mt-1 md:mt-1 line-clamp-1 md:line-clamp-2">Pastry renyah dengan isian coklat premium yang meleleh.</p>
+              <div className="mt-auto pt-2 md:pt-3 flex justify-end w-full">
+                <button className="w-7 h-7 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
                   <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>
             </div>
           </div>
 
-          <h3 className="text-xl font-bold headline mt-12 mb-4 text-on-surface px-2">Espresso Based</h3>
+          <h3 className="col-span-full text-lg md:text-xl font-bold headline mt-4 md:mt-6 mb-1 md:mb-4 text-on-surface px-1 md:px-2">Espresso Based</h3>
           
           {/* Card 4 */}
-          <div className="bg-surface-container-lowest p-3 md:p-4 rounded-xl flex gap-3 md:gap-4 items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20">
-            <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="bg-surface-container-lowest p-2.5 md:p-4 rounded-xl flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20 h-full">
+            <div className="w-full md:w-24 aspect-square md:aspect-auto md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
               <img alt="Americano" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/images/americano.jpg" />
             </div>
-            <div className="flex-grow">
-              <div className="flex justify-between items-start">
-                <h4 className="font-bold text-on-surface text-base md:text-lg leading-tight">Americano</h4>
-                <span className="text-primary font-black text-base md:text-lg whitespace-nowrap">Rp 18.000</span>
+            <div className="flex-grow flex flex-col w-full h-full">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-0.5 md:gap-4 w-full">
+                <h4 className="font-bold text-on-surface text-sm md:text-lg leading-tight line-clamp-2 md:line-clamp-none">Americano</h4>
+                <span className="text-primary font-black text-sm md:text-lg whitespace-nowrap">Rp 18.000</span>
               </div>
-              <p className="text-xs md:text-sm text-on-surface-variant mt-1 line-clamp-2">Espresso shot yang diencerkan dengan air panas.</p>
-              <div className="mt-3 flex justify-end">
-                <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+              <p className="text-[10px] md:text-sm text-on-surface-variant mt-1 md:mt-1 line-clamp-1 md:line-clamp-2">Espresso shot yang diencerkan dengan air panas.</p>
+              <div className="mt-auto pt-2 md:pt-3 flex justify-end w-full">
+                <button className="w-7 h-7 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
                   <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>
             </div>
           </div>
 
-          <h3 className="text-xl font-bold headline mt-12 mb-4 text-on-surface px-2">Non-Kopi</h3>
+          <h3 className="col-span-full text-lg md:text-xl font-bold headline mt-4 md:mt-6 mb-1 md:mb-4 text-on-surface px-1 md:px-2">Non-Kopi</h3>
 
           {/* Card 5 */}
-          <div className="bg-surface-container-lowest p-3 md:p-4 rounded-xl flex gap-3 md:gap-4 items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20">
-            <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="bg-surface-container-lowest p-2.5 md:p-4 rounded-xl flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20 h-full">
+            <div className="w-full md:w-24 aspect-square md:aspect-auto md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
               <img alt="Matcha Latte" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/images/matcha-latte.jpg" />
             </div>
-            <div className="flex-grow">
-              <div className="flex justify-between items-start">
-                <h4 className="font-bold text-on-surface text-base md:text-lg leading-tight">Matcha Latte</h4>
-                <span className="text-primary font-black text-base md:text-lg whitespace-nowrap">Rp 24.000</span>
+            <div className="flex-grow flex flex-col w-full h-full">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-0.5 md:gap-4 w-full">
+                <h4 className="font-bold text-on-surface text-sm md:text-lg leading-tight line-clamp-2 md:line-clamp-none">Matcha Latte</h4>
+                <span className="text-primary font-black text-sm md:text-lg whitespace-nowrap">Rp 24.000</span>
               </div>
-              <p className="text-xs md:text-sm text-on-surface-variant mt-1 line-clamp-2">Bubuk teh hijau Jepang berkualitas dengan steamed milk.</p>
-              <div className="mt-3 flex justify-end">
-                <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+              <p className="text-[10px] md:text-sm text-on-surface-variant mt-1 md:mt-1 line-clamp-1 md:line-clamp-2">Bubuk teh hijau Jepang berkualitas dengan steamed milk.</p>
+              <div className="mt-auto pt-2 md:pt-3 flex justify-end w-full">
+                <button className="w-7 h-7 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
                   <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>
@@ -184,18 +184,18 @@ export default function Merchant() {
           </div>
 
           {/* Card 6 */}
-          <div className="bg-surface-container-lowest p-3 md:p-4 rounded-xl flex gap-3 md:gap-4 items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20">
-            <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0 rounded-lg overflow-hidden">
+          <div className="bg-surface-container-lowest p-2.5 md:p-4 rounded-xl flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center transition-all hover:shadow-lg hover:shadow-primary/5 group border border-transparent hover:border-outline-variant/20 h-full">
+            <div className="w-full md:w-24 aspect-square md:aspect-auto md:h-24 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
               <img alt="Red Velvet Latte" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="/images/red-velvet-latte.jpg" />
             </div>
-            <div className="flex-grow">
-              <div className="flex justify-between items-start">
-                <h4 className="font-bold text-on-surface text-base md:text-lg leading-tight">Red Velvet Latte</h4>
-                <span className="text-primary font-black text-base md:text-lg whitespace-nowrap">Rp 24.000</span>
+            <div className="flex-grow flex flex-col w-full h-full">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-0.5 md:gap-4 w-full">
+                <h4 className="font-bold text-on-surface text-sm md:text-lg leading-tight line-clamp-2 md:line-clamp-none">Red Velvet Latte</h4>
+                <span className="text-primary font-black text-sm md:text-lg whitespace-nowrap">Rp 24.000</span>
               </div>
-              <p className="text-xs md:text-sm text-on-surface-variant mt-1 line-clamp-2">Rasa kue red velvet yang unik dalam segelas latte.</p>
-              <div className="mt-3 flex justify-end">
-                <button className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
+              <p className="text-[10px] md:text-sm text-on-surface-variant mt-1 md:mt-1 line-clamp-1 md:line-clamp-2">Rasa kue red velvet yang unik dalam segelas latte.</p>
+              <div className="mt-auto pt-2 md:pt-3 flex justify-end w-full">
+                <button className="w-7 h-7 md:w-10 md:h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm">
                   <Plus className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>

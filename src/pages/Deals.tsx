@@ -236,21 +236,21 @@ export default function Deals() {
             </div>
             <h2 className="text-xl md:text-2xl font-extrabold text-primary headline">Promo Menu Hari Ini</h2>
           </div>
-          <div className="flex gap-4 md:gap-6 overflow-x-auto no-scrollbar pb-4 -mx-4 px-4 md:mx-0 md:px-0">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 pb-4 -mx-4 px-4 md:mx-0 md:px-0">
             {MOCK_PROMOS.map((promo) => (
-              <Link to="/merchant" key={promo.id} className="min-w-[240px] md:min-w-[280px] bg-surface-container-lowest rounded-2xl overflow-hidden border border-outline-variant/10 hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col">
-                <div className="h-32 md:h-40 relative overflow-hidden shrink-0">
+              <Link to="/merchant" key={promo.id} className="w-full bg-surface-container-lowest rounded-xl md:rounded-2xl overflow-hidden border border-outline-variant/10 hover:shadow-lg hover:-translate-y-1 transition-all group flex flex-col h-full">
+                <div className="aspect-square md:h-40 relative overflow-hidden shrink-0 bg-surface-container-low">
                   <img src={promo.image} alt={promo.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute top-3 right-3 bg-secondary text-white px-2.5 py-1 rounded-lg text-xs font-bold shadow-sm">
                     Hemat {promo.discount}
                   </div>
                 </div>
-                <div className="p-4 flex flex-col flex-grow">
-                  <p className="text-[10px] uppercase font-bold tracking-widest text-outline mb-1">{promo.merchant}</p>
-                  <h3 className="font-bold text-primary mb-2 line-clamp-1">{promo.name}</h3>
-                  <div className="mt-auto flex items-baseline gap-2">
-                    <span className="font-black text-lg text-primary">{promo.price}</span>
-                    <span className="text-xs text-outline line-through">{promo.originalPrice}</span>
+                <div className="p-3 md:p-4 flex flex-col flex-grow">
+                  <p className="text-[8px] md:text-[10px] uppercase font-bold tracking-widest text-outline mb-1 line-clamp-1">{promo.merchant}</p>
+                  <h3 className="font-bold text-xs md:text-base text-primary mb-2 line-clamp-2 md:line-clamp-1 leading-tight">{promo.name}</h3>
+                  <div className="mt-auto flex flex-col md:flex-row md:items-baseline gap-0.5 md:gap-2">
+                    <span className="font-black text-sm md:text-lg text-primary">{promo.price}</span>
+                    <span className="text-[10px] md:text-xs text-outline line-through">{promo.originalPrice}</span>
                   </div>
                 </div>
               </Link>
@@ -281,7 +281,7 @@ export default function Deals() {
           {sortedAndFilteredMerchants.length > 0 ? (
             sortedAndFilteredMerchants.map((merchant) => (
               <Link to="/merchant" key={merchant.id} className="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-outline-variant/10 flex flex-col">
-                <div className="relative h-32 md:h-48 overflow-hidden shrink-0">
+                <div className="relative aspect-square md:aspect-auto md:h-48 overflow-hidden shrink-0 bg-surface-container-low">
                   <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt={merchant.name} src={merchant.image} />
                   <div className="absolute top-2 left-2 md:top-3 md:left-3 flex flex-col gap-1.5">
                     {merchant.tags.map(tag => (
